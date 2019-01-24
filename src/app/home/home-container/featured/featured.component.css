@@ -1,0 +1,25 @@
+.container{
+
+  background: #FAFAFA;
+}
+.container-fluid{
+  padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.feature-card{
+  background: #FAFAFA;
+
+}
+.card{
+  height: 500px;
+
+}
+
+.img{
+  height: 500px;
+  background: url('../../../../assets/images/background.jpg');
+
+
+}

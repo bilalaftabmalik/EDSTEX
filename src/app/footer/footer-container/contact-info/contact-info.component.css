@@ -1,0 +1,19 @@
+.container-fluid{
+  background: #F2F2F2;
+}
+i{
+  padding: 7px;
+  border-color: black;
+  border-style: solid;
+  margin-left: 30px;
+
+}
+p{
+  margin-left: 30px;
+  font-size: 11px;
+  font-family: Montserrat;
+  font-style: normal
+}
+
+
+

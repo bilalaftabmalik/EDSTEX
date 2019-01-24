@@ -1,0 +1,16 @@
+img{
+  height: 500px;
+}
+.container-fluid{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top:50px;
+  background: #F2F2F2;
+}
+.card{
+  padding :20px;
+}
+.btn{
+  border-radius: 0;
+  padding:20px
+}

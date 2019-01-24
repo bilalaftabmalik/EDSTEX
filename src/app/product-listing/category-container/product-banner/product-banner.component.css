@@ -1,0 +1,21 @@
+img{
+  height: 500px;
+}
+.container-fluid{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top:20px;
+  background: #F2F2F2;
+}
+
+.btn{
+  border-radius: 0;
+  padding:20px
+}
+.row{
+  margin-left: -70px;
+  margin-right: -70px;
+}
+.card{
+  background:  #F2F2F2;
+}

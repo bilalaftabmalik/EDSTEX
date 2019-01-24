@@ -1,0 +1,25 @@
+ul{
+  list-style: none;
+  line-height: 150%;
+}
+ul li{
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+.liHover :hover{
+  background: #424242;
+  color: beige;
+  cursor: pointer;
+}
+#servicesHeading{
+  padding-top: 14px;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
