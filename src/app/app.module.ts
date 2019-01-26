@@ -11,6 +11,7 @@ import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatTabBase } from '@angular/material/tabs/typings/tab';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
 	declarations: [ AppComponent ],
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 		RouterModule.forRoot(routes),
 		MatGridListModule,
 		MatTabsModule,
-		BrowserAnimationsModule
+		BrowserAnimationsModule,
+		MatFormFieldModule
 	],
 
 	providers: [],
