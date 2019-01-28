@@ -4,7 +4,7 @@ padding-left: 0px;
 padding-right: 0px;
 }
 .card{
-  /* padding: 30px 60px 30px; */
+
   background: #F2F2F2;
 }
 .email-text-box:focus {
@@ -23,29 +23,20 @@ img{
   height: 500px;
   opacity: 1;
 }
-/* .img-overlay {
 
-
-  background-color: rgba(128,128,128,0.5);
-}
-#overlay {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,.5);
-  z-index: 2;
-  cursor: pointer;
-} */
 img{
 opacity: 0.4;
 filter: alpha(opacity=50)
 
 }
-.my-newsletter{
-  /* padding: 50px 100px 50px */
+
+.card-img-overlay{
+  margin-top: 9%;
+}
+
+.newsletter-text{
+  padding-top: 26px
+}
+h1{
+  padding-bottom: 40px;
 }
