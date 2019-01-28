@@ -1,3 +1,5 @@
+import { MatCardModule } from '@angular/material/card';
+import { BlogComponent } from './home-container/blog/blog.component';
 import { MatGridListModule } from '@angular/material';
 
 import { NgModule } from '@angular/core';
@@ -10,9 +12,11 @@ import { CategoriesComponent } from './home-container/categories/categories.comp
 import { BestProductComponent } from './home-container/best-product/best-product.component';
 import { SuggestedProductsComponent } from './home-container/suggested-products/suggested-products.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import{NewsletterComponent} from './home-container/newsletter/newsletter.component';
+
 
 @NgModule({
-	imports: [ CommonModule, HomeRoutingModule, MatGridListModule, MatTabsModule ],
+	imports: [ CommonModule, HomeRoutingModule, MatGridListModule, MatTabsModule , MatCardModule],
 	exports: [ HomeContainerComponent ],
 	declarations: [
 		HomeContainerComponent,
@@ -20,7 +24,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 		FeaturedComponent,
 		CategoriesComponent,
 		BestProductComponent,
-		SuggestedProductsComponent
+    SuggestedProductsComponent,
+    BlogComponent,
+    NewsletterComponent
 	]
 })
 export class HomeModule {}
