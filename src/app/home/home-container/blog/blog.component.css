@@ -1,0 +1,26 @@
+.container-fluid{
+  background: #F2F2F2;
+
+}
+p{
+  font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: Montserrat;
+}
+/* .img-fluid{
+  max-width: 80%;
+} */
+h4{
+  font-family: Montserrat;
+}
+.col-8{
+  padding: 20px;
+}
+.blog-head{
+  padding: 10px;
+}
+.card{
+  background: #e5e5e563;
+  padding: 20px;
+}
