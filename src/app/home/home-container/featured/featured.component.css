@@ -5,7 +5,7 @@
 .container-fluid{
   padding-right: 100px;
     padding-left: 100px;
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .feature-card{
@@ -13,12 +13,12 @@
 
 }
 .card{
-  height: 500px;
+  height: 350px;
 
 }
 
 .img{
-  height: 500px;
+  height: 350px;
   background: url('../../../../assets/images/background.jpg');
 
 

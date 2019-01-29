@@ -1,0 +1,42 @@
+.container-fluid{
+background: #F2F2F2;
+padding-left: 0px;
+padding-right: 0px;
+}
+.card{
+
+  background: #F2F2F2;
+}
+.email-text-box:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.email-text-box{
+  border-radius: 0px;
+}
+.btn{
+  border-radius: 0px;
+  color: white
+}
+img{
+  width: 100%;
+  height: 500px;
+  opacity: 1;
+}
+
+img{
+opacity: 0.4;
+filter: alpha(opacity=50)
+
+}
+
+.card-img-overlay{
+  margin-top: 9%;
+}
+
+.newsletter-text{
+  padding-top: 26px
+}
+h1{
+  padding-bottom: 40px;
+}

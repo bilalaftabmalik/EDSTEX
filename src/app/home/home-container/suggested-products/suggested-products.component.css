@@ -5,12 +5,22 @@
 	padding-top: 40px;
 }
 img {
-	height: 400px;
+	height: 200px;
 }
 .card {
 	margin: 20px;
-	height: 300px;
+  height: auto;
+  width: auto;
 }
 .btn {
 	border-radius: 0;
+}
+
+.example-card {
+  max-width: 400px;
+
+
+}
+.row{
+       margin-right: 0px;
 }

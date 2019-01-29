@@ -45,5 +45,11 @@ input{
 
   border-color: #737376;
   background-color: #737376;
-  color: white
+  color: white;
+  outline: none !important;
+  box-shadow: none;
+}
+.search:focus {
+  outline: none !important;
+  box-shadow: none;
 }
