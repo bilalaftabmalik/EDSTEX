@@ -53,3 +53,6 @@ input{
   outline: none !important;
   box-shadow: none;
 }
+#logo{
+  height: 35px;
+}
