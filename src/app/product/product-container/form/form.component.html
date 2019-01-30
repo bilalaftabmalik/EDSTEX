@@ -2,15 +2,21 @@
 <h2>$18.00</h2>
 <div class="container border">
   <p><b>Make a Selection</b></p>
-    <mat-form-field >
-        <mat-select placeholder="Select">
+  <div class="row">
+    <div class="col-12">
+      <mat-form-field  class="full-width">
+        <mat-select placeholder="Select Size">
             <mat-option value="option">Single</mat-option>
             <mat-option value="option">Double</mat-option>
             <mat-option value="option">King Size</mat-option>
             <mat-option value="option">Super King Size</mat-option>
           </mat-select>
     </mat-form-field>
-    <mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <mat-form-field class="full-width">
         <mat-select placeholder="Select Qty">
             <mat-option value="option">1</mat-option>
             <mat-option value="option">2</mat-option>
@@ -18,30 +24,50 @@
             <mat-option value="option">4</mat-option>
           </mat-select>
     </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-6" >
+        <mat-form-field class="full-width">
+          <mat-select placeholder="Select Color" >
+              <mat-option value="option">grey</mat-option>
+              <mat-option value="option">white</mat-option>
+              <mat-option value="option">blue</mat-option>
+              <mat-option value="option">pink</mat-option>
+            </mat-select>
+      </mat-form-field>
+      </div>
+      <div class="col-6">
+        <button mat-raised-button class="full-width"  color="warn">Add to cart</button><br>
+
+      </div>
+    </div>
 
 
-    <button mat-button color="warn">Add to cart</button><br>
+
+
+
 
     <p><b>Available Via</b></p>
 
     <ul>
-      <li><i class="far fa-check-circle"></i>  Standard Delivery</li>
-      <li><i class="far fa-check-circle"></i>  Express Delivery</li>
-      <li><i class="far fa-check-circle"></i>  Reserve & Collect</li>
+      <li><i class="fas fa-truck"></i><i class="far fa-check-circle"></i>  Standard Delivery</li>
+      <li><i class="fas fa-shipping-fast"></i><i class="far fa-check-circle"></i>  Express Delivery</li>
+      <li><i class="fas fa-car"></i><i class="far fa-check-circle"></i>  Reserve & Collect</li>
     </ul>
 
     <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              Personal data
+              Description
             </mat-panel-title>
             <mat-panel-description>
-              Type your name and age
+
             </mat-panel-description>
           </mat-expansion-panel-header>
 
-
+          <p>In varying grey tones, this duvet cover set is printed with a dandelion design and offers a geo patterned reverse. With pillowcase/s included, the set has been made from a strong polycotton blend that has been finished with a soft handle to provide increased comfort. This set is available in a choice of sizes.</p>
 
 
         </mat-expansion-panel>
@@ -49,14 +75,59 @@
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              Self aware panel
+              Features
             </mat-panel-title>
             <mat-panel-description>
-              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+
             </mat-panel-description>
           </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
+
+
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+              <!--- Note that these columns can be defined in any order.
+                    The actual rendered columns are set as a property on the row definition" -->
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="feature">
+                <th mat-header-cell *matHeaderCellDef> </th>
+                <td mat-cell *matCellDef="let element"><b>{{element.feature}}</b>  </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="value">
+                <th id="value-header" mat-header-cell *matHeaderCellDef> </th>
+                <td id="td-value" mat-cell *matCellDef="let element"> {{element.value}} </td>
+              </ng-container>
+
+
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+
+
         </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Easy Returns
+              </mat-panel-title>
+              <mat-panel-description>
+
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>We hope you love this product, but if you decide it's not right you can return it for free, here's how:
+
+                Store return - If you live near one of our stores and can easily carry your item, this is the fastest way to return or exchange a product. Collect+ return - For products that weigh less than 10kg and are smaller than 60x50x50cm, you can return your item at thousands of collection points around the country. Complete the returns form provided with your delivery and enclose with your parcel. Locate your local collect+ point.
+                If your parcel weighs more than 10kg and is larger than 60cmx50cmx50cm, please contact us to arrange a return.
+
+                Exceptions apply, see our full returns policy.</p>
+
+
+          </mat-expansion-panel>
       </mat-accordion>
 
   </div>

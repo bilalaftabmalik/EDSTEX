@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import { SuggestionsComponent } from './product-container/suggestions/suggestions.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatFormFieldModule,
     MatSelectModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule
   ],
   declarations: [ProductContainerComponent, GalleryComponent, FormComponent, SuggestionsComponent]
 })

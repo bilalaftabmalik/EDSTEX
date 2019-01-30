@@ -4,11 +4,12 @@ show {
 }
 
 .small-img {
-  width: 350px;
+  width: 340px;
   height: 70px;
   margin-top: 10px;
   position: relative;
-  left: 25px;
+  /* left: 25px; */
+
 }
 
 .small-img .icon-left, .small-img .icon-right {
@@ -20,6 +21,9 @@ show {
   bottom: 0;
   margin: auto 0;
 }
+.icon-right{
+  right: 30px !important;
+}
 
 .small-img .icon-left { transform: rotate(180deg) }
 
@@ -28,7 +32,7 @@ show {
 .small-img .icon-left:hover, .small-img .icon-right:hover { opacity: .5; }
 
 .small-container {
-  width: 310px;
+  width: 227px;
   height: 70px;
   overflow: hidden;
   position: absolute;
