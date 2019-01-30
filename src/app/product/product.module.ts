@@ -9,6 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import { SuggestionsComponent } from './product-container/suggestions/suggestions.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SuggestionsComponent } from './product-container/suggestions/suggestion
     ProductRoutingModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatExpansionModule
   ],
   declarations: [ProductContainerComponent, GalleryComponent, FormComponent, SuggestionsComponent]
 })
