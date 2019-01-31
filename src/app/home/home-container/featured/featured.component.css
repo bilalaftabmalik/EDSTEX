@@ -14,6 +14,7 @@
 }
 .card{
   height: 350px;
+  width: 18rem;
 
 }
 
@@ -22,4 +23,19 @@
   background: url('../../../../assets/images/background.jpg');
 
 
+}
+
+@media screen  and (max-width: 812px) {
+  .container-fluid{
+    padding-right: 20px;
+      padding-left: 20px;
+      /* padding-top: 40px; */
+  }
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 900px){
+  .card-body{
+    padding: 0.25rem;
+  }
 }

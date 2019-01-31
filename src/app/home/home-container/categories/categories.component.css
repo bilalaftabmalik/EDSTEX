@@ -6,12 +6,42 @@
 	margin-top: 10px;
 }
 img {
-	height: 240px;
+  /* height: 240px;
+  width: 240px */
 }
 .card {
-	margin: 20px;
+	margin: 0px;
 	height: auto;
+}
+h5{
+  font-size: 1rem;
 }
 .btn {
 	border-radius: 0;
+}
+.row{
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 760px){
+  h5{
+    font-size: 0.75rem;
+  }
+  .blanket-font{
+    font-size: 0.6rem;
+  }
+  img{
+     /* height: 150px; */
+  }
+  /* .card{
+    margin: 8px;
+  }
+
+  .container-fluid {
+    background: #f2f2f2;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin-top: 10px;
+  } */
 }

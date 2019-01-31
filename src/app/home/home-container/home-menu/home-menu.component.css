@@ -1,3 +1,15 @@
 mat-grid-tile {
   background:#F2F2F2;
 }
+/*font size of home menu*/
+@media screen and (max-width: 480px) {
+  .small-fonts {
+    font-size: 0.45rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 790px) {
+  .small-fonts {
+    font-size: 0.6rem;
+  }
+}
+

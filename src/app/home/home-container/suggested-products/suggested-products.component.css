@@ -4,8 +4,15 @@
 	padding-left: 100px;
 	padding-top: 40px;
 }
+mat-card-header mat-card-title{
+  font-size: 0.9rem
+}
+
+mat-card-content {
+  font-size: 0.8rem;
+}
 img {
-	height: 200px;
+	/* height: 200px; */
 }
 .card {
 	margin: 20px;
@@ -17,10 +24,29 @@ img {
 }
 
 .example-card {
-  max-width: 400px;
+  /* max-width: 400px; */
 
 
 }
 .row{
        margin-right: 0px;
+}
+
+@media screen and (max-width:776px){
+  .example-card {
+    /* max-width: 400px; */
+
+
+  }
+  .card {
+    margin: 8px;
+    height: auto;
+    width: auto;
+  }
+  .container-fluid {
+    background: #f2f2f2;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
 }
