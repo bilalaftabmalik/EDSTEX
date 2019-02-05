@@ -15,6 +15,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import{NewsletterComponent} from './home-container/newsletter/newsletter.component';
 
 
+
 @NgModule({
 	imports: [ CommonModule, HomeRoutingModule, MatGridListModule, MatTabsModule , MatCardModule],
 	exports: [ HomeContainerComponent ],

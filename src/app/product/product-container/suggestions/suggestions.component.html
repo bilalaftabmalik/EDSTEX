@@ -5,17 +5,17 @@
     </div>
   </div>
   <div class="row">
-  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-    <div class="card border-0" style="width: 12rem;">
-  <img src="../../../../assets/images/s1.jpg" class="card-img-top img-fluid" alt="">
+  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" *ngFor='let row of productArray'>
+    <div class="card border-0" style="width: 12rem;" (click)="cardClcikFn(row?.product_id)">
+  <img [src]=row?.img_url class="card-img-top img-fluid" alt="">
   <div class="card-body">
-    <h5 class="card-title">Elements Pomegranate Reversible Duvet Cover</h5>
+    <h5 class="card-title">{{row?.title}}</h5>
 
 
   </div>
 </div>
   </div>
-  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+  <!-- <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
       <div class="card border-0" style="width: 12rem;">
     <img src="../../../../assets/images/s1.jpg" class="card-img-top img-fluid" alt="">
     <div class="card-body">
@@ -64,7 +64,7 @@
 
             </div>
           </div>
-            </div>
+            </div> -->
 
   </div>
 

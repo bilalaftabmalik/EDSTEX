@@ -1,4 +1,8 @@
+import { Observable } from 'rxjs';
+import { ProductService } from './../../../Shared/product.service';
 import { Component, OnInit } from '@angular/core';
+import { SharedClass } from 'src/app/Shared/SharedClass';
+import { HttpParams } from '@angular/common/http';
 
 export interface PeriodicElement {
 
@@ -24,13 +28,28 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class FormComponent implements OnInit {
   panelOpenState = false;
+  $productDetails: Observable<Object>;
+  details: any;
+
+
 
   displayedColumns: string[] = ['feature', 'value'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  constructor(private productService: ProductService) {  }
 
   ngOnInit() {
+
+    this.$productDetails = this.productService.getProductDetails(SharedClass.selectedProductId);
+    console.log('selected product id is', SharedClass.selectedProductId);
+    this.$productDetails.subscribe(res => {
+
+      this.details = res['product'];
+      console.log('product details are', this.details);
+    }, err => {
+
+    });
   }
+
 
 }

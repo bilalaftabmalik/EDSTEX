@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <div class="row">
       <!-- <div class="card-group "> -->
-        <div class="col">
+        <div class="col" *ngFor="let row of cArray">
           <div class="card text-center ">
             <img class="card-img-top img-fluid" src="../../assets/images/pic4.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Duvet</h5>
+              <h5 class="card-title">{{row?.category_name}}</h5>
               <button type="button" class="btn btn-outline-dark">View More</button>
             </div>
 
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <div class="card text-center ">
             <img class="card-img-top img-fluid" src="../../assets/images/pic4.jpg" alt="Card image cap">
             <div class="card-body">
@@ -52,7 +52,7 @@
             </div>
 
           </div>
-        </div>
+        </div>-->
 
 
 

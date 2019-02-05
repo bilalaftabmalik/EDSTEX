@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { MatGridListModule } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { FooterModule } from './footer/footer.module';
@@ -24,7 +25,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 		MatGridListModule,
 		MatTabsModule,
 		BrowserAnimationsModule,
-		MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
 	],
 
 	providers: [],
