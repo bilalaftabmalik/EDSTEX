@@ -23,6 +23,9 @@ img{
   height: 500px;
   opacity: 1;
 }
+p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
 
 img{
 opacity: 0.4;
@@ -39,4 +42,12 @@ filter: alpha(opacity=50)
 }
 h1{
   padding-bottom: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+input{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+button{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }

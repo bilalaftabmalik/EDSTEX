@@ -10,3 +10,9 @@
   cursor: pointer;
 
 }
+.product-title{
+font-size: 14px;
+}
+h3{
+  opacity: 0.8;
+}

@@ -3,6 +3,7 @@ import { ProductService } from './../../../Shared/product.service';
 import { Component, OnInit } from '@angular/core';
 import { SharedClass } from 'src/app/Shared/SharedClass';
 import { HttpParams } from '@angular/common/http';
+import { CommonService } from 'src/app/Shared/services/common.service';
 
 export interface PeriodicElement {
 
@@ -36,7 +37,7 @@ export class FormComponent implements OnInit {
   displayedColumns: string[] = ['feature', 'value'];
   dataSource = ELEMENT_DATA;
 
-  constructor(private productService: ProductService) {  }
+  constructor(private productService: ProductService, private commonServiec: CommonService) {  }
 
   ngOnInit() {
 
@@ -49,6 +50,12 @@ export class FormComponent implements OnInit {
     }, err => {
 
     });
+
+    this.commonServiec.switchMessageFormEvent.subscribe(
+      (res) => {
+          console.log('response form other sibling ', res);
+      }
+  );
   }
 
 

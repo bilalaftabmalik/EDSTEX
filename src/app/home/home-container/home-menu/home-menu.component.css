@@ -13,3 +13,6 @@ mat-grid-tile {
   }
 }
 
+.row{
+  margin-bottom: 10px;
+}

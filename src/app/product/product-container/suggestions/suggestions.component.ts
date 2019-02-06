@@ -1,3 +1,4 @@
+import { CommonService } from './../../../Shared/services/common.service';
 import { HttpParams } from '@angular/common/http';
 import { SharedClass } from 'src/app/Shared/SharedClass';
 import { Observable } from 'rxjs';
@@ -15,7 +16,7 @@ export class SuggestionsComponent implements OnInit {
   $productDetails: Observable<Object>;
   productArray: any;
   detailsArray: any;
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private commonService: CommonService) { }
 
   ngOnInit() {
     this.$products = this.productService.getProducts();
@@ -28,8 +29,7 @@ export class SuggestionsComponent implements OnInit {
   }
 
   cardClcikFn(id) {
-    const params = new HttpParams().set('p_id', id);
-    console.log('params', params);
+
     console.log('Product id is', id);
     SharedClass.selectedProductId = id;
     this.$productDetails = this.productService.getProductDetails(id);
@@ -37,6 +37,7 @@ export class SuggestionsComponent implements OnInit {
 
       this.detailsArray = res['product'];
 
+      this.commonService.switchMessageForm(this.detailsArray);
 
 
     }, err => {
